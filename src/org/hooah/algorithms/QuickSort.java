@@ -16,52 +16,7 @@ public class QuickSort {
 		
 		System.out.println('F'+'F');
 		System.out.println(f(4));
-		System.out.println(isPalindrome("madam"));
-		System.out.println(isPalindrome("kayak"));
-		System.out.println(isPalindrome("peter"));
-		System.out.println(isPalindrome("ab"));
-		
-		
-		System.out.println("TRUE:" + isPermutationOfPalindrome("tact coa"));
-		System.out.println("TRUE:" + isPermutationOfPalindrome("daamm"));
-		System.out.println("TRUE:" + isPermutationOfPalindrome("yaakk"));
-		
-		System.out.println("FALSE:" + isPermutationOfPalindrome("peter cee"));
-		
-		
-		char space = ' ';
-		//System.out.println(sort("lbjedsfgsgsdbawz".toCharArray()));
-		//	System.out.println(sort("abcdefghijklmnop".toCharArray()));
 	}
-	
-	private static boolean isPermutationOfPalindrome(String str) {
-		char[] a = str.toCharArray();
-		boolean oneUnique = a.length % 2 != 0;
-		for(int i = 0, j = 1; j < a.length - 1; j += 2, i += 2) {
-			char ai = a[i];
-			while(ai != a[j]) {
-				if(j++ >= a.length - 1) {
-					if(!oneUnique) {
-						return false;
-					}
-					oneUnique = false;
-					break;
-				}
-			}
-		}
-		return true;
-	}
-	
-	private static boolean isPalindrome(String str) {
-		char[] a = str.toCharArray();
-		for(int left = 0, right = a.length - 1; left < right; right--, left++) {
-			if(a[left] != a[right]) {
-				return false;
-			}
-		}
-		return true;
-	}
-	
 	
 	static int f(int n) {
 		System.out.println("n:" + n);
