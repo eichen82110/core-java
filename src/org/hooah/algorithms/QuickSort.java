@@ -29,7 +29,7 @@ public class QuickSort {
 	/**
 	 * O(n log n) sorting
 	 */
-	static char[] sort(char[] a) {
+	public static char[] sort(char[] a) {
 		if(a.length > 3200) {
 			return countingSort(a);
 		}

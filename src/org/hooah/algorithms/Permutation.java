@@ -13,12 +13,6 @@ public class Permutation {
 		System.out.println(isPermutation("abaef", "bacef"));
 		System.out.println(isPermutation("baCef", "bacef"));
 		System.out.println(isPermutation("bacef", "cbaef"));
-		
-		assert isPermutation("cbaef", "bacef");
-		assert !isPermutation("abaef", "bacef");
-		assert !isPermutation("baCef", "bacef");
-		assert isPermutation("bacef", "cbaef");
-		
 	}
 	
 	
