@@ -1,4 +1,6 @@
-package org.hooah.algorithms;
+package org.hooah.problems;
+
+import org.hooah.algorithms.QuickSort;
 
 import java.util.ArrayList;
 import java.util.List;
