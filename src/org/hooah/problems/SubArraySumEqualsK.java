@@ -18,6 +18,19 @@ import java.util.HashMap;
  */
 public class SubArraySumEqualsK {
 	
+	public boolean divisorGame(int N) {
+		boolean[] dp = new boolean[N+1];
+		for(int i = 1; i <= N; i++){
+			for(int x = 1; x < i; x++){
+				if(i%x == 0 && !dp[i-x]){
+					dp[i] = true;
+					break;
+				}
+			}
+		}
+		return dp[N];
+	}
+	
 	public int subarraySum(int[] nums, int k) {
 		int count = 0;
 		int sum = 0;
